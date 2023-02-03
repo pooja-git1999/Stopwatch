@@ -17,15 +17,24 @@
     <div id="content">
         <h1 class="heading">Stopwatch with vanilla javascript</h1>
 
+        <!-- link of clock image -->
+        <img src="https://img.freepik.com/free-vector/huge-chronometer-team-tiny-business-cartoon-people-early-morning-alarm-work-school-countdown-flat-vector-illustration-time-management-technology-concept-banner-website-design_74855-24273.jpg?size=626&ext=jpg&ga=GA1.1.279545990.1665226225&semt=sph"
+            id="clock-img">
+
         <!--container of clock-->
         <div class="clock-container">
             <!-- time counter -->
             <div id="time-counter">
-
+                <h3><span id="hr" class="run">00</span>
+                    : <span id="min" class="run">00</span>
+                    : <span id="sec" class="run">00</span>
+                </h3>
             </div>
             <!--watch-buttons-->
             <div id="buttons">
-
+                <button onclick="startButton()" class="btn btn-success m-2">Start</button>
+                <button onclick="stopButton()" class="btn btn-danger m-2">Stop</button>
+                <button onclick="restartButton()" class="btn btn-warning m-2">Restart</button>
             </div>
         </div>
 
